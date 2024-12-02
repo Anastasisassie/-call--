@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<div th:insert="blocks/head"></div>
+
+<body class="index-page">
+
+<div th:insert="blocks/header"></div>
+
+<main class="main">
+
+    <section id="hero" class="hero section dark-background">
+        <img src="/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="/img/hero-img.png" class="img-fluid animated" alt="">
+                </div>
+
+                <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+                    <h1>Добро пожаловать на <span>Connection</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#about" class="btn-get-started">Начать работу</a>
+                        <a href="https://www.youtube.com/watch?v=Eo4moOPJS2A"
+                           class="glightbox btn-watch-video d-flex align-items-center">
+                            <i class="bi bi-play-circle"></i><span>О нас</span></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="wave-path"
+                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            </defs>
+            <g class="wave1">
+                <use xlink:href="#wave-path" x="50" y="3"></use>
+            </g>
+            <g class="wave2">
+                <use xlink:href="#wave-path" x="50" y="0"></use>
+            </g>
+            <g class="wave3">
+                <use xlink:href="#wave-path" x="50" y="9"></use>
+            </g>
+        </svg>
+
+    </section>
+
+    <section id="about" class="about section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-xl-center gy-5">
+
+                <div class="col-xl-5 content">
+                    <h3>О нас</h3>
+                    <h2>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nihil, quae. Autem beatae
+                        distinctio ducimus expedita explicabo mollitia natus non officia pariatur, perferendis quibusdam
+                        sequi sint suscipit. Cum eaque, tempora.
+                    </p>
+                    <a href="/" class="read-more"><span>Подробнее</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+
+                <div class="col-xl-7">
+                    <div class="row gy-4 icon-boxes">
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon-box">
+                                <i class="bi bi-buildings"></i>
+                                <h3>Консультации и поддержка</h3>
+                                <p>
+                                    Accusantium, architecto doloremque hic illum itaque iusto labore neque qui repellat
+                                    ut?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box">
+                                <i class="bi bi-clipboard-pulse"></i>
+                                <h3>Решение проблем</h3>
+                                <p>
+                                    Accusantium, architecto doloremque hic illum itaque iusto labore neque qui repellat
+                                    ut?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-box">
+                                <i class="bi bi-command"></i>
+                                <h3>Управление запросами</h3>
+                                <p>
+                                    Accusantium, architecto doloremque hic illum itaque iusto labore neque qui repellat
+                                    ut?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <h3>Аналитика и отчёты</h3>
+                                <p>
+                                    Accusantium, architecto doloremque hic illum itaque iusto labore neque qui repellat
+                                    ut?
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="stats" class="stats section light-background">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-emoji-smile"></i>
+                    <div class="stats-item">
+                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p>Довольных клиентов</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-journal-richtext"></i>
+                    <div class="stats-item">
+                        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p>Заявок</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-headset"></i>
+                    <div class="stats-item">
+                        <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p>Часов поддержки</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-people"></i>
+                    <div class="stats-item">
+                        <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p>Специалистов</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="details" class="details section">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Подробности</h2>
+            <div>
+                <span>Как мы работаем с клиентами</span>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row gy-4 align-items-center features-item">
+                <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="/img/details-1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h3>
+                    <p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row gy-4 align-items-center features-item">
+                <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out"
+                     data-aos-delay="200">
+                    <img src="/img/details-2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aspernatur corporis,
+                        culpa distinctio doloremque eum harum id ipsa laborum modi odio sed tempore vel velit? Error
+                        odio sed tempora!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis obcaecati omnis
+                        quisquam ut voluptas voluptatem. Adipisci alias aperiam assumenda dolor doloremque ea modi,
+                        molestiae officia optio placeat quasi vero?
+                    </p>
+                </div>
+            </div>
+
+            <div class="row gy-4 align-items-center features-item">
+                <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+                    <img src="/img/details-3.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7" data-aos="fade-up">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cum eum ipsum
+                        natus nesciunt quia sapiente ut. Blanditiis ducimus illum iste libero nulla odio optio quidem,
+                        recusandae rem totam.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row gy-4 align-items-center features-item">
+                <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+                    <img src="/img/details-4.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque mollitia omnis reiciendis
+                        totam! Ducimus enim inventore nisi. Aspernatur eum facilis rerum. Aliquid, at, vitae. Dicta
+                        dolores eveniet laborum maiores vero.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi aspernatur at atque
+                        consequatur deleniti dolores dolorum eum hic incidunt iusto laborum laudantium, minus officiis
+                        quidem quod sequi ullam voluptatibus.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="testimonials" class="testimonials section dark-background">
+
+        <img src="/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                            "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                        }
+                    }
+                </script>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                            <h3>Михаилов</h3>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur
+                                    dolorum iusto numquam perspiciatis praesentium quidem ratione sequi ullam veniam?
+                                    Alias debitis dignissimos expedita hic in nisi perspiciatis placeat sint?
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                            <h3>Михаиловна</h3>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur
+                                    dolorum iusto numquam perspiciatis praesentium quidem ratione sequi ullam veniam?
+                                    Alias debitis dignissimos expedita hic in nisi perspiciatis placeat sint?
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                            <h3>Михаиловна</h3>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur
+                                    dolorum iusto numquam perspiciatis praesentium quidem ratione sequi ullam veniam?
+                                    Alias debitis dignissimos expedita hic in nisi perspiciatis placeat sint?
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                            <h3>Михаилов</h3>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur
+                                    dolorum iusto numquam perspiciatis praesentium quidem ratione sequi ullam veniam?
+                                    Alias debitis dignissimos expedita hic in nisi perspiciatis placeat sint?
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                            <h3>Михаилов</h3>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur
+                                    dolorum iusto numquam perspiciatis praesentium quidem ratione sequi ullam veniam?
+                                    Alias debitis dignissimos expedita hic in nisi perspiciatis placeat sint?
+                                </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="team" class="team section">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Команда</h2>
+            <div><span>Профессиональные специалисты</span></div>
+        </div>
+
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <div class="pic"><img src="/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Михаилов</h4>
+                            <span>Специалист</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <div class="pic"><img src="/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Михаиловна</h4>
+                            <span>Специалист</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <div class="pic"><img src="/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Михаилов</h4>
+                            <span>Специалист</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="faq" class="faq section light-background">
+
+        <div class="container-fluid">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+                    <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+                        <h3><span>Часто задаваемые </span><strong>Вопросы</strong></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                        </p>
+                    </div>
+
+                    <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="faq-item faq-active">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <div class="faq-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci autem
+                                    beatae dolores ducimus error in incidunt ipsum modi nihil perspiciatis praesentium,
+                                    quia rerum soluta velit voluptatum. Delectus, minima.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <div class="faq-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci autem
+                                    beatae dolores ducimus error in incidunt ipsum modi nihil perspiciatis praesentium,
+                                    quia rerum soluta velit voluptatum. Delectus, minima.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+
+                        <div class="faq-item">
+                            <i class="faq-icon bi bi-question-circle"></i>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            <div class="faq-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci autem
+                                    beatae dolores ducimus error in incidunt ipsum modi nihil perspiciatis praesentium,
+                                    quia rerum soluta velit voluptatum. Delectus, minima.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <img src="/img/faq.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact section">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Контакт</h2>
+            <div><span>Наши</span> <span class="description-title">Данные</span></div>
+        </div>
+
+        <div class="container" data-aos="fade" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4">
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>Минск, Беларусь</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div>
+                            <h3>Позвоните нам</h3>
+                            <p>+375 99 999 99 99</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3>Электронная почты</h3>
+                            <p>connection@email.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8">
+                    <form  method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Ваше имя" required="">
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Ваша электронная почта"
+                                       required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Тема" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Сообщение"
+                                          required=""></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="w-100">Отправить сообщение</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<div th:insert="blocks/footer"></div>
+
+</body>
+
+</html>

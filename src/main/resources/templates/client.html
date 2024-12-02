@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<div th:insert="blocks/head"></div>
+
+<body class="starter-page-page">
+
+<div th:insert="blocks/header"></div>
+
+<main class="main">
+
+    <div class="page-title dark-background" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 th:text="${client.fio}"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="/clients">Назад</a></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <section class="container">
+
+        <div th:if="${message}" class="d-flex justify-content-center" data-aos="fade-up">
+            <div class="alert alert-warning" role="alert">
+                <strong th:text="${message}"></strong>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12 col-lg-4 mb-2" data-aos="fade-up">
+                <img th:src="${client.img}" alt="user" class="w-100 rounded shadow border">
+            </div>
+            <div class="col-12 col-lg mb-2" data-aos="fade-up">
+                <p class="fs-4 m-0" th:text="${client.tel}"></p>
+                <hr>
+                <form action="/applications/add" method="post">
+                    <input type="number" name="clientId" hidden class="form-control" th:value="${client.id}">
+                    <input type="number" name="number" required class="form-control mb-2" min="1" step="1" max="1000000" placeholder="Номер заявки">
+                    <input type="date" name="date" required class="form-control mb-2">
+                    <select name="categoryId" required class="form-select mb-2">
+                        <option selected disabled>Выберите категорию</option>
+                        <option th:each="i : ${categories}" th:value="${i.id}" th:label="${i.name}"></option>
+                    </select>
+                    <select name="status" required class="form-select mb-2">
+                        <option th:each="i : ${applicationStatuses}" th:value="${i}" th:label="${i.name}"></option>
+                    </select>
+                    <select name="managerId" required class="form-select mb-2">
+                        <option selected value="0">Без менеджера</option>
+                        <option th:each="i : ${managers}" th:value="${i.id}" th:label="${i.fio}"></option>
+                    </select>
+                    <textarea name="description" required class="form-control mb-2" minlength="1" maxlength="5000" placeholder="Описание"></textarea>
+                    <button type="submit" class="btn btn-primary w-100">Оформить заявку</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div th:each="i : ${client.getApplicationsClient}" class="col-12 col-lg-4 mb-2" data-aos="fade-up">
+                <a th:href="${'/applications/' + i.id}">
+                    <div class="card card-body shadow text-black">
+                        <p class="fs-4 m-0 text-center" th:text="${'Заявка №' + i.number}"></p>
+                        <p class="fs-5 m-0" th:text="${'Статус: ' + i.status.name}"></p>
+                        <p class="fs-5 m-0" th:text="${'Категория: ' + i.category.name}"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+</main>
+
+<div th:insert="blocks/footer"></div>
+
+</body>
+
+</html>

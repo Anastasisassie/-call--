@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<div th:insert="blocks/head"></div>
+
+<body class="starter-page-page">
+
+<div th:insert="blocks/header"></div>
+
+<main class="main">
+
+    <div class="page-title dark-background" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Категории</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+
+        <div class="row d-flex justify-content-center" data-aos="fade-up">
+            <form action="/categories/add" method="post" class="col-12 col-lg-8 row">
+                <div class="col-12 col-lg mb-2">
+                    <input type="text" name="name" required class="form-control" minlength="1" maxlength="255"
+                           placeholder="Наименование">
+                </div>
+                <div class="col-12 col-lg-auto mb-2">
+                    <button type="submit" class="btn btn-primary w-100">Добавить</button>
+                </div>
+            </form>
+        </div>
+
+        <div th:each="i : ${categories}" class="row d-flex justify-content-center" data-aos="fade-up">
+            <form th:action="${'/categories/' + i.id + '/update'}" method="post" class="col-12 col-lg-8 row">
+                <div class="col-12 col-lg mb-2">
+                    <input type="text" name="name" required class="form-control" minlength="1" maxlength="255"
+                           placeholder="Наименование" th:value="${i.name}">
+                </div>
+                <div class="col-12 col-lg-auto mb-2">
+                    <button type="submit" class="btn btn-success w-100">Обновить</button>
+                </div>
+                <div class="col-12 col-lg-auto mb-2">
+                    <a th:href="${'/categories/' + i.id + '/delete'}" class="btn btn-danger w-100">Удалить</a>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+</main>
+
+<div th:insert="blocks/footer"></div>
+
+</body>
+
+</html>
