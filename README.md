@@ -10,3 +10,7 @@
 Диаграмма классов:
 
 ![image](https://github.com/user-attachments/assets/730d1f9f-b049-49c0-a249-7e47d3bd4ce3)
+
+Логическая модель данных:
+
+![image](https://github.com/user-attachments/assets/e49ae144-da35-40d8-b126-865806bf91de)
